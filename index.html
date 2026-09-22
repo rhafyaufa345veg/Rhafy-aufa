@@ -1,133 +1,241 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COLORLENS - Platform Kesehatan Mata Digital</title>
 
-    <!-- Font -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
-    <title>JedX Learning Platform</title>
 
-    <!-- Icon Library -->
+    <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <!-- Navbar Start-->
+    <!-- Navbar Start -->
     <nav class="navbar">
-      <a href="#" class="logo-navbar">Jed<span>X</span></a>
+      <a href="#" class="logo-navbar">COLOR<span>LENS</span></a>
       <div class="navbar-nav">
-        <a href="#">Beranda</a>
+        <a href="#home">Beranda</a>
         <a href="#about">Tentang</a>
-        <a href="#course">Kelas</a>
-        <a href="#contact">Kontak</a>
+        <a href="#features">Fitur Utama</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#login">Masuk</a>
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search">
-          <i data-feather="search"></i>
-        </a>
+        <a href="#login" class="btn-nav">Masuk / Daftar</a>
         <a id="hamburger-menu" href="#"><i data-feather="menu"></i></a>
       </div>
     </nav>
-    <!-- Header End -->
+    <!-- Navbar End -->
 
-    <!-- Main Start -->
+    <!-- Hero Section Start -->
     <section class="hero" id="home">
       <main class="content">
-        <h1>Belajar Lebih Mudah, Tumbuh Lebih Cepat</h1>
-        <p>Platform pembelajaran yang membantu kamu belajar dengan mudah, mengembangkan keterampilan, dan mencapai potensi terbaikmu.</p>
-        <a href="" class="cta">Gabung</a>
+        <span class="tagline">PLATFORM KESEHATAN MATA DIGITAL</span>
+        <h1>See the World Clearly Right From Your Phone</h1>
+        <p>
+          COLORLENS menghadirkan tes mata berstandar medis (Ishihara) dan tes
+          persepsi warna interaktif yang langsung dapat diakses dengan mudah dan
+          cepat dari perangkat Android & Smartphone Anda.
+        </p>
+        <div class="hero-buttons">
+          <a href="#features" class="cta">Pelajari Lebih Lanjut &rarr;</a>
+          <a href="#dashboard" class="cta-secondary">Mulai Tes Sekarang</a>
+        </div>
       </main>
 
       <div class="hero-image">
-        <img src="/assets/hero.png" alt="" />
+        <div class="phone-mockup">
+          <i data-feather="eye" class="mockup-icon"></i>
+          <h3>COLORLENS</h3>
+          <p>Tes Buta Warna Digital</p>
+        </div>
       </div>
     </section>
-    <!-- Main End -->
+    <!-- Hero Section End -->
 
     <!-- About Section Start -->
     <section class="about" id="about">
-      <h2>Tentang Kami</h2>
+      <h2>Tentang COLORLENS</h2>
       <div class="row">
         <div class="about-img">
-          <img src="/assets/about.png" alt="" />
+          <img src="/assets/about.png" alt="Tentang Colorlens" id="about-img-preview" />
         </div>
         <div class="content">
-          <h3>Kenapa memilih JedX Learning Platform?</h3>
+          <h3>Kemudahan Tes Mata Dalam Genggaman</h3>
           <p>
-            JedX Learning Platform adalah platform pembelajaran yang dirancang untuk membantu kamu belajar dengan lebih mudah, fleksibel, dan menyenangkan. Kami menyediakan berbagai kelas dan materi untuk menambah pengetahuan serta
-            mengembangkan keterampilan sesuai minat dan kebutuhanmu. Dengan pengalaman belajar yang sederhana dan mudah dipahami, JedX hadir untuk mendukung setiap langkahmu dalam berkembang dan mencapai potensi terbaik.
+            COLORLENS adalah solusi inovatif untuk deteksi dini gangguan persepsi
+            warna (buta warna parsial maupun total). Aplikasi ini dirancang
+            untuk membantu masyarakat melakukan skrining awal kesehatan visual
+            sebelum berkonsultasi lebih lanjut dengan dokter spesialis mata.
+          </p>
+          <p>
+            100% Praktis, Cepat, dan Menjaga Kerahasiaan Data Hasil Pemeriksaan
+            Anda.
           </p>
         </div>
       </div>
     </section>
     <!-- About Section End -->
 
-    <!-- Course Section Start -->
-    <section class="course" id="course">
-      <h2>Kelas yang tersedia</h2>
-      <p>Pilih kelas yang sesuai dengan minatmu dan kembangkan keterampilanmu bersama JedX.</p>
+    <!-- 4 Fitur Utama Section Start -->
+    <section class="features" id="features">
+      <h2>4 Fitur Utama Platform Colorlens</h2>
+      <p class="section-subtitle">
+        Semua fitur dirancang khusus untuk mempermudah tes mata dan koreksi visual
+      </p>
 
-      <div class="row" id="course-list"></div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="icon-box"><i data-feather="disc"></i></div>
+          <h3>Tes Ishihara Digital</h3>
+          <p>
+            Simulasi pelat tes Ishihara lengkap 38 halaman untuk mendeteksi
+            buta warna merah-hijau secara akurat.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="icon-box"><i data-feather="sliders"></i></div>
+          <h3>Filter Simulasi Visual</h3>
+          <p>
+            Fitur penyaring lensa khusus untuk membantu penderita buta warna
+            membedakan kontras warna layar.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="icon-box"><i data-feather="file-text"></i></div>
+          <h3>Rekam Medis & Riwayat</h3>
+          <p>
+            Menyimpan riwayat hasil tes kesehatan mata Anda secara otomatis dan
+            terorganisir di dashboard.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="icon-box"><i data-feather="activity"></i></div>
+          <h3>Rekomendasi & Diagnosis</h3>
+          <p>
+            Mendapatkan saran awal dan rekomendasi langkah medis dari hasil tes
+            yang telah dilakukan.
+          </p>
+        </div>
+      </div>
     </section>
-    <!-- Course Section End -->
+    <!-- 4 Fitur Utama Section End -->
 
-    <!-- Contact Section Start -->
-    <section id="contact" class="contact">
-      <h2>Kontak Kami</h2>
-      <p>Pilih kelas yang sesuai dengan minatmu dan kembangkan keterampilanmu bersama JedX.</p>
+    <!-- Rekam Test & Dashboard Section Start -->
+    <section class="dashboard" id="dashboard">
+      <h2>Rekom Test dan Dashboard</h2>
+      <p class="section-subtitle">Pantau perkembangan kesehatan mata Anda di sini</p>
 
-      <div class="row">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.585720336962!2d107.7222779402832!3d-6.940013493088898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c323777ca3a1%3A0x355eff6734ed9167!2sUniversitas%20Pendidikan%20Indonesia%20-%20Kampus%20UPI%20Cibiru!5e0!3m2!1sen!2sid!4v1787874858376!5m2!1sen!2sid"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-          class="map"
-        ></iframe>
+      <div class="dashboard-cards">
+        <div class="dash-card">
+          <i data-feather="check-circle"></i>
+          <h4>Total Tes Selesai</h4>
+          <span class="stat-num">12 Kali</span>
+        </div>
+        <div class="dash-card">
+          <i data-feather="award"></i>
+          <h4>Status Terakhir</h4>
+          <span class="stat-num text-success">Normal</span>
+        </div>
+        <div class="dash-card">
+          <i data-feather="calendar"></i>
+          <h4>Tes Berikutnya</h4>
+          <span class="stat-num">10 Okt 2026</span>
+        </div>
+      </div>
 
-        <form action="">
+      <!-- Table Riwayat Test -->
+      <div class="table-container">
+        <h3>Riwayat Test Terakhir</h3>
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Tanggal</th>
+              <th>Modul Test</th>
+              <th>Diagnosa</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10 Sep 2026</td>
+              <td>Ishihara 38 Plates Test</td>
+              <td>Normal (Penglihatan Baik)</td>
+              <td><span class="badge success">Selesai</span></td>
+            </tr>
+            <tr>
+              <td>15 Aug 2026</td>
+              <td>Tes Kontras Warna Farnsworth</td>
+              <td>Protanopia Ringan</td>
+              <td><span class="badge warning">Perlu Evaluasi</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- Rekam Test & Dashboard Section End -->
+
+    <!-- Form Login / Masuk Section Start -->
+    <section class="login-section" id="login">
+      <div class="login-box">
+        <h2>Masuk ke Colorlens</h2>
+        <p>AKSES RIWAYAT PEMERIKSAAN DAN KONSULTASI ANDA</p>
+
+        <form action="#" method="POST">
           <div class="input-group">
-            <i data-feather="user"> </i>
-            <input type="text" placeholder="nama" />
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Username / Alamat Email" required />
           </div>
           <div class="input-group">
-            <i data-feather="mail"> </i>
-            <input type="text" placeholder="email" />
+            <i data-feather="lock"></i>
+            <input type="password" placeholder="Password" required />
           </div>
-          <div class="input-group">
-            <i data-feather="phone"> </i>
-            <input type="number" placeholder="nomor hp" />
+          <div class="form-footer">
+            <a href="#" class="forgot-pass">Lupa Password?</a>
           </div>
-
-          <button type="submit" class="btn">Kirim pesan</button>
+          <button type="submit" class="btn-submit">Masuk ke Platform</button>
         </form>
       </div>
     </section>
-    <!-- Contact Section End -->
+    <!-- Form Login Section End -->
 
-    <!-- Footer Section Start-->
+    <!-- Footer Start -->
     <footer id="footer">
       <div class="socials">
         <a href="#"><i data-feather="instagram"></i></a>
         <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
       </div>
       <div class="links">
         <a href="#home">Beranda</a>
         <a href="#about">Tentang</a>
-        <a href="#course">kelas</a>
-        <a href="#contact">Kontak</a>
+        <a href="#features">Fitur</a>
+        <a href="#dashboard">Dashboard</a>
       </div>
-      <div>
-        <p>Created by <a href="">Mochamad Irfan Hidayat. | &copy;2026</a></p>
+      <div class="credit">
+        <p>&copy; 2026 COLORLENS. Platform Kesehatan Mata Digital.</p>
       </div>
     </footer>
-    <!-- Footer Section End-->
+    <!-- Footer End -->
 
+    <!-- JavaScript Icons Setup -->
+    <script>
+      feather.replace();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
